@@ -1,0 +1,385 @@
+*{
+      padding: 0;
+      margin: 0;
+ 
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8f928b;
+    margin: auto;
+    
+}
+
+body{
+    background-color: #d2d3c0;
+   
+}
+
+.info{
+    
+    margin: 100px ;
+    
+     
+
+    
+}
+
+img.picture{
+    width: 40%;
+    height: 40%;
+    border-radius: 20em;
+    padding: 0em;
+    margin: 0.5em;
+    background-color: rgb(196, 149, 182);
+    float: right; 
+    margin-top: -170px;  
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    padding: 1em;
+    margin: auto;
+    
+} 
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    color: #491177;
+    
+}
+p.home{
+    font-size: 2em;
+    font-weight: bold;
+    color: #491177;
+    align-content: center;
+    text-align: justify;
+
+}
+p.projects{
+    font-size: 1.5em;
+    color: #491177;
+    align-content: center;
+    text-align: justify;
+   
+}
+p.aboutme{
+    margin: 0.5em;
+    padding: 0em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #491177;
+    justify-content: center;
+    text-align: right;
+}
+
+img.ToluImage{
+    width: 20em;
+    border-radius: 20em;
+    margin: 1em;
+    float: left;
+}
+
+.aboutmesection {
+    margin: 10em;
+    padding: 5em;
+    
+
+}
+h3#aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: auto;
+}
+
+img.viewimage{
+    float: right;
+}
+
+span{
+        color: #a30707;
+        font-size: 1em; 
+        margin: 0px;   
+
+} 
+
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+   
+    text-decoration: solid;
+     
+}
+
+
+.projectsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: left; 
+    width: auto;
+    padding: 5em;
+    margin: 10em;
+}
+
+.send-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 184, 197);
+    height: 15px;
+    padding: 1.5em;
+    margin: 0.5em;
+    color: #491177;
+    border: 2px solid #0b3f1b;
+    border-radius: 15px;
+    width: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    float: right;
+   
+}
+
+h2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 10px;
+    padding: 1em;
+    width: 5em;
+    margin:5px;
+}
+
+
+.project-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 9em;
+    border: 2px solid #0b3f1b;
+    padding: .5em;
+    margin: 2em; 
+    cursor: pointer;
+    border-radius: 25em;
+    background-color: rgb(129, 184, 197);
+    font-weight: bold;
+    font-size: 1em;
+    color: #491177;
+}
+
+.Resumesection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: left; 
+    width: auto;
+   
+    padding: 5em;
+    margin: 10em; 
+}
+
+h3#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: auto;
+} 
+
+h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: auto;
+} 
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10em;
+   
+   
+}
+
+.contactsection{
+   
+    margin: 10em;
+    padding: 2px;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px; 
+    color: #0b3f1b;
+    background-color: #b2d8da;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: auto;
+} 
+
+label { 
+    color: rgb(131, 9, 9);
+    margin: 0.5em;
+    font-size: 16px;
+}  
+input#name {
+    color: rgb(131, 9, 9);
+    width: 25%;
+    color: rgb(3, 3, 3);
+    padding:0.5em;
+    margin: 0.5em;
+    
+}
+
+input#email{
+    width: 25%;
+    color: rgb(3, 3, 3);
+    padding: 0.5em;
+    margin: 0.5em;
+
+}
+textarea#message {
+    color: rgb(3, 3, 3);
+    width: 50%;
+    height: 20%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    margin: 0.5em;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 25em;
+    padding: -15em;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0b3f1b;
+    margin: 0em;
+}
+
+footer {
+   
+  font-size: small;
+  font-style: italic;
+ 
+}
+
+img.linkedin{
+margin: 10px;
+width: 3em;
+background-color: unset;
+float: left;
+}
+
+a#linkedin{
+    width: 3.5em;
+}
+a.resume{
+  color: #8f0303;
+  font-size:1.5em;
+  float: right;
+  margin: 0em;
+   
+}
+
+img.github{
+    width: 2em;
+    margin: 10px;
+}
+
+.skillsection  {
+    margin: 10em;
+}
+
+img.skillimage{
+    float: right ;
+    width: 20em;
+    border-radius: 20em;
+    margin: 2em;
+}
+ul {
+    margin: 5em;
+    color: #491177;
+    font-size: 1.5em;
+}
+
+.contactimage{
+    width: 25em;
+    float: left;
+    border-radius: 25em;
+    margin: 2em;
+}
+
+p.footer {
+    font-size: 18px;
+    color: #a30707;
+    font-weight: bold;
+    margin: 6em;
+}
+
+p{
+    justify-content: center;
+}
+
+header {
+   background-color: white;
+   padding: 0em;
+   
+}
+.scrollbackup{
+    float: right;
+}
+
+
