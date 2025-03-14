@@ -3,28 +3,50 @@
       margin: 0;
  
 }
+  /* Header */
+ 
+ 
 
-main{
-    justify-content: center;
+  /* Navigation */
+nav{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    background-color: #8f928b;
+    height: 30px;
+    padding: 0em;
     margin: auto;
     
 }
-
-body{
-    background-color: #d2d3c0;
-   
+ul.nav-links {
+    display: flex; 
+    list-style-type: none;
+    justify-content: center;
 }
 
-.info{
-    
-    margin: 100px ;
-    
-     
+nav ul li {
+    margin: 0 15px;
+}
 
-    
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button.menu-toggle{
+    display: flex;
+}
+
+
+body {
+    background-color: #d2d3c0;
+    line-height: 1.6;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+   }
+
+.info{
+    margin: 100px ;      
 }
 
 img.picture{
@@ -40,21 +62,14 @@ img.picture{
     
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-    padding: 1em;
-    margin: auto;
-    
-} 
-
 h1{
     font-size: 2em;
     font-weight: bold;
     color: #491177;
-    
+}
+
+h1#home {
+    display: flex;
 }
 p.home{
     font-size: 2em;
@@ -211,6 +226,11 @@ h3#projects{
     margin: auto;
 } 
 
+ul.skill{
+    justify-self: left;
+    text-align: justify;
+}
+
 h5{
     display: flex;
     justify-content: center;
@@ -309,12 +329,7 @@ form {
     margin: 0em;
 }
 
-footer {
-   
-  font-size: small;
-  font-style: italic;
- 
-}
+
 
 img.linkedin{
 margin: 10px;
@@ -350,7 +365,7 @@ img.skillimage{
     margin: 2em;
 }
 ul {
-    margin: 5em;
+    margin: 2em;
     color: #491177;
     font-size: 1.5em;
 }
@@ -363,11 +378,21 @@ ul {
 }
 
 p.footer {
-    font-size: 18px;
-    color: #a30707;
+    background-color: white;
+    padding: 0px;
+    color: #0b3f1b;
     font-weight: bold;
-    margin: 6em;
+   
+    
 }
+
+footer {
+    background: white;
+    margin-top: 100px;
+    display: block; 
+    text-align: center;
+  
+ }
 
 p{
     justify-content: center;
@@ -381,5 +406,120 @@ header {
 .scrollbackup{
     float: right;
 }
+
+img.topimage{
+    display: flex;
+}
+
+
+
+
+@media (max-width: 768px ) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        width: 100%;
+    }
+
+    img{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    div{
+        text-align: justify;
+        margin: 0em;
+        padding: 0em
+    }
+
+    body{
+        height: 100%
+    }
+
+img.picture{
+    width: 18em ;
+}
+
+.info{
+    margin: 5em;
+    padding: 5em;
+    font-size: 12px; 
+    text-align: justify;
+}
+
+p.home{
+    text-align: justify;
+    justify-content: left;
+}
+
+h3#aboutme{
+justify-content: left;
+align-content: left;
+display: flex;
+width: auto;  
+     
+}
+.aboutmesection {
+    margin: 0em;
+    justify-content: center;
+    
+}
+
+img.Toluimage{
+    width: 18em
+}
+p.aboutme{
+    text-align: justify;
+}
+
+.projectsection{
+    margin: 0em;
+    justify-content: center;
+}
+h3#projects{
+ justify-content: left;
+align-content: left;
+display: flex;
+width: auto;  
+}
+
+img.skillimage{
+    width: em
+}
+.skillsection{
+    margin: 0em;
+    justify-content: center;
+}
+h5{
+    justify-content: center;
+    align-content: left;
+    display: flex;
+    width: 5em
+
+}
+
+.contactsection{
+    margin: 0em;
+    justify-content: center;
+}
+
+.contactimage{
+    display: none
+}
+
+h2{
+justify-content: center;
+align-content: left;
+display: flex;
+width: 5em;
+margin: auto;
+    
+}
+    
+}
+
+
 
 

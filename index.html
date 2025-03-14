@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>/Tolulope-Portfolio</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
-  <head>
+  </head>
    
   <body>
     
   
     
     <header>
+        <button class="menu-toggle">☰</button>
         <nav>
-            <a href="#home">Home</a><br />
-            <a href="#aboutme">About</a><br />
-            <a href="#projects">Projects</a><br />
-            <a href="#skills">Skills</a><br />
-            <a href="#contact">Contact</a><br />
-            </nav>
+            <ul class = "nav-links">
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>   
-     
+    <h1 id="home"></h1>
     <div class="container">
     <div class = "info">
     <img src="tolu-bit1.jpg" class="picture">
@@ -72,7 +75,7 @@
     <div class = "skillsection" >
         <h5 id ="skills">Skills</h5>
         <img src="skills.jpg" class="skillimage">
-        <ul>
+        <ul class="skill">
             <li>Creative</li>
             <li>Critical Thinker</li>
             <li>Developer</li>
@@ -80,7 +83,7 @@
             <li>Responsible</li>
             <li>Detail Oriented</li>
             <li>Goal getter</li>
-            <li>Presentation</li>
+            <li>Presentation skill</li>
 
         </ul>
 
@@ -99,18 +102,22 @@
         <textarea id="message" name="message"></textarea>
         <button class="send-button">Send</button>
     </form>
+    
 
     <div class="scrollbackup">
         <a href="#home" id=scrollbackup>
         <img src="Top.png" class="topimage">
         </a>
-        <p class="scrollbackup"> back home</p>
+        <p class="scrollbackup">go back home</p>
         </div>
-
-    <footer>
-        <p class="footer"> email me @ toluotepola@gmail.com</p>
-        <p>&copy; 2025 Tolulope</p>
+    </div>
+    
+        <div>
+        <footer>
+        <p class="footer"> my email is toluotepola@gmail.com</p>
+        <p class="footer">&copy; 2025 Tolulope</p>
     </footer>  
+    </div>
 
   </body>
 
