@@ -48,6 +48,9 @@ nav ul li a {
     color: #491177;
 }
 
+.mobileButton{
+    display: none;
+}
 button.menu-toggle{
     display: none;
 }
@@ -55,7 +58,7 @@ button.menu-toggle{
 
 body {
     background-color: #d2d3c0;
-    line-height: 1.6;
+   
     text-align: center;
     box-sizing: border-box;
     height: 100%;
@@ -156,9 +159,7 @@ span{
         color: #a30707;
         font-size: 1em; 
         margin: 0px;   
-
 } 
-
 
 a {
     font-style: italic;
@@ -166,7 +167,6 @@ a {
     font-size: 30px;
    
     text-decoration: solid;
-     
 }
 
 
@@ -486,9 +486,6 @@ header {
 img.topimage{
     display: flex;
 }
-
-
-
 }
 
 
@@ -508,13 +505,13 @@ img.topimage{
     }
     
     
-    ul.nav-links {
+    ul.nav-links.show {
         display:none;
         flex-direction: column;
         justify-content: left;
-
+       
     }
-
+    
     img{
         display: flex;
         flex-direction: column; 
@@ -522,9 +519,12 @@ img.topimage{
 
     header {
         background-color: white;
-        padding: 1.5em;
+        padding: 1em;
         position:absolute;
         width: 100%;
+        margin: 0%;
+        height: 80px;
+        list-style: none;
     }
 
     div{
@@ -534,24 +534,25 @@ img.topimage{
 
     body{
         height: 100%
+        
+        
     }
 
-img.picture{
+    img.picture{
     width: 18em ;
-}
+      }
 
-.info{
+    .info{
     margin: 5em;
     padding: 5em;
     font-size: 12px; 
     text-align: justify;
-}
+     }
 
 p.home{
     text-align: justify;
     justify-content: left;
 }
-
 
 h3#aboutme{
 justify-content: left;
@@ -640,27 +641,28 @@ img.loanproject{
     width: 0em;
     border: none;
     padding: 0em;
-    margin: auto; 
+    margin:0em; 
     cursor: pointer;
     border-radius: none;
     background-color: rgb(129, 184, 197);
     font-weight: bold;
     font-size: .6em;
     color: #491177;
+    margin-top: 0em;
        
 }
-ul.nav-links.show {
+ul.nav-links {
     display:flex ;
     flex-direction: column;
     justify-content: left;
-    
+    margin: -1.5em;
+    margin-left: -15em;
 }
 
 .container1{
     display: flex;
     flex-direction: column;
 }
-    
 
 .container2{
     display: flex;
