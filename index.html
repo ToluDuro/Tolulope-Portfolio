@@ -7,21 +7,19 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
   </head>
-   
-  <body>
-    
-  
+   <body>
+
     
     <header>
         <button class="menu-toggle">☰</button>
         <nav>
             <ul class = "nav-links">
-            <li><a href="#home"> Home</a></li>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
+            <li><button class="nav-button" onclick="location.href='#home'">Home</button></li>
+            <li><button class="nav-button" onclick="location.href='#aboutme'">About</button></li>
+            <li><button class="nav-button" onclick="location.href='#projects'">Projects</button></li>
+            <li><button class="nav-button" onclick="location.href='#skills'">Skills</button></li>
+            <li><button class="nav-button" onclick="location.href='#contact'">Contact</button></li>
+             </ul>
         </nav>
     </header>   
     <h1 id="home"></h1>
@@ -44,9 +42,12 @@
 
 </div>
 </div>
-
+    
 <div class="aboutmesection">
-    <h3 id ="aboutme">About Me</h3> 
+    <div>
+        <h3 id ="aboutme"></h3> 
+    </div>
+    <h3>About Me</h3> 
     <img src="Toluimg.jpeg" class="ToluImage">
     <p class="aboutme">I'm Tolulope</p>
     <p class="aboutme">I'm a Full stack developer based in Calgary, Alberta. I am passionate about learning and enjoy creating functional and interactive websites </p>
@@ -60,21 +61,40 @@
 
 
 <div class ="projectsection" >
+    <div>
+        <h3 id ="projects"></h3> 
+    </div>
     
-    <h3 id = "projects">Project List</h3>
-    <button class="project-button">Project 1</button>
-       <p class="projects">Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae elit ligula dignissim, augue pellentesque scelerisque. Ut feugiat lacinia condimentum id sociosqu pharetra. Mi nascetur pulvinar litora sociosqu suscipit facilisis lobortis. Arcu et conubia mus convallis neque mi maximus accumsan. Facilisis magnis dictum dignissim auctor tristique netus potenti etiam aliquam. Efficitur netus tincidunt convallis mauris ultrices ad sagittis. Ut sodales orci vestibulum pharetra placerat nascetur? Dis sapien hac nostra scelerisque amet risus tortor fusce laoreet.
-        Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae elit ligula dignissim, augue pellentesque scelerisque. Ut feugiat lacinia condimentum id sociosqu pharetra. Mi nascetur pulvinar litora sociosqu suscipit facilisis lobortis. Arcu et conubia mus convallis neque mi maximus accumsan. Facilisis magnis dictum dignissim auctor tristique netus potenti etiam aliquam. Efficitur netus tincidunt convallis mauris ultrices ad sagittis. Ut sodales orci vestibulum pharetra placerat nascetur? Dis sapien hac nostra scelerisque amet risus tortor fusce laoreet.
+    <h3>Project List</h3>
+        <button class="project-button">Project 1</button>
+        <div class="container1">
+        <img src="FAQ project.png" class="faqproject">
+       <p class="projects">A web-based customer support system was developed for a bank to enhance customer service efficiency. The platform integrates a self-service knowledge base with FAQ-style articles covering common banking queries, allowing customers to find quick solutions without agent intervention. Additionally, it features an AI-powered chatbot to handle inquiries that are not addressed in the FAQs, offering real-time assistance and guiding users to relevant resources or support agents if needed.
+
+        The system was designed with a user-friendly interface, ensuring seamless navigation and accessibility. It was built using modern web technologies, incorporating secure authentication, data encryption, and compliance with banking regulations to safeguard customer information.
+        
+        This solution significantly reduced the volume of incoming customer support tickets, improved response times, and enhanced customer satisfaction by providing instant, accurate, and efficient assistance..
     </p>
+    </div>
 
     <button class="project-button">Project 2</button>
-    <p class="projects">Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae elit ligula dignissim, augue pellentesque scelerisque. Ut feugiat lacinia condimentum id sociosqu pharetra. Mi nascetur pulvinar litora sociosqu suscipit facilisis lobortis. Arcu et conubia mus convallis neque mi maximus accumsan. Facilisis magnis dictum dignissim auctor tristique netus potenti etiam aliquam. Efficitur netus tincidunt convallis mauris ultrices ad sagittis. Ut sodales orci vestibulum pharetra placerat nascetur? Dis sapien hac nostra scelerisque amet risus tortor fusce laoreet.</p>
-      
+    <div class="container2">
+    <img src="loanImg.webp" class="loanproject">
+    <p class="projects">The bank's web-based platform simplifies the loan and deposit processes, offering a seamless experience for customers.
+        For the Loan Process, customers apply online, and with API integrations eligibility checks and document verification were made seamless. E-signatures ensure secure approvals, and real-time status updates keep customers informed.
+        For the Deposit Process, users open and manage accounts digitally, complete KYC verification, and make secure deposits. The platform provides interest rate insights, account tracking, and automated notifications.
+        This solution enhances efficiency, reduces costs, and improves customer satisfaction.
+        </p>
+      </div>
     </div>
 
     <div class = "skillsection" >
-        <h5 id ="skills">Skills</h5>
+        <div>
+            <h3 id ="skills"></h3> 
+        </div>
+        <h3>Skills</h3>
         <img src="skills.jpg" class="skillimage">
+                
         <ul class="skill">
             <li>Creative</li>
             <li>Critical Thinker</li>
@@ -91,13 +111,16 @@
     </div>
 
 <div class = "contactsection">
-    <h2 id="contact">Contact</h2>
+    <div>
+        <h3 id ="contact"></h3> 
+    </div>
+    <h3>Contact</h3>
     <img src="Contactme.jpg" class="contactimage">
         <form>
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
         <button class="send-button">Send</button>

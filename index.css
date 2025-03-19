@@ -8,6 +8,7 @@
  
 
   /* Navigation */
+
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -32,8 +33,24 @@ nav ul li a {
     font-size: 18px;
 }
 
-button.menu-toggle{
+.nav-button {
     display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 5em;
+    border: 2px solid #0b3f1b;
+    padding: .2em;
+    margin: 2em; 
+    cursor: pointer;
+    border-radius: 25em;
+    background-color: rgb(129, 184, 197);
+    font-weight: bold;
+    font-size: .6em;
+    color: #491177;
+}
+
+button.menu-toggle{
+    display: none;
 }
 
 
@@ -59,7 +76,6 @@ img.picture{
     float: right; 
     margin-top: -170px;  
     
-    
 }
 
 h1{
@@ -79,7 +95,7 @@ p.home{
     text-align: justify;
 
 }
-p.projects{
+p.projects {
     font-size: 1.5em;
     color: #491177;
     align-content: center;
@@ -114,12 +130,23 @@ h3#aboutme{
     justify-content: center;
     align-items: center;
     font-size: 2em; 
-    color: #0b3f1b;
-    background-color: #b2d8da;
     height: 1em;
     padding: 0.5em;
     width: 15em;
-    margin: auto;
+    margin: 1em;
+    background-color: unset;
+}
+
+h3 {
+    font-size: 2em;
+    color: #0b3f1b;
+    background-color:#b2d8da;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0em;
+ 
 }
 
 img.viewimage{
@@ -195,7 +222,7 @@ h2{
     padding: .5em;
     margin: 2em; 
     cursor: pointer;
-    border-radius: 25em;
+    border-radius: 25em 25em 10em 25em;
     background-color: rgb(129, 184, 197);
     font-weight: bold;
     font-size: 1em;
@@ -208,7 +235,6 @@ h2{
     justify-content: center;    
     align-items: left; 
     width: auto;
-   
     padding: 5em;
     margin: 10em; 
 }
@@ -219,12 +245,30 @@ h3#projects{
     align-items: center;
     font-size: 2em; 
     color: #0b3f1b;
-    background-color: #b2d8da;
+    background-color: unset;
     height: 1em;
     padding: 0.5em;
     width: 15em;
-    margin: auto;
+    margin: 1em;
 } 
+h3#projects{
+    
+    align-content: left;
+    display: flex;
+    width: 1em;  
+   }
+
+img.faqproject{
+    float: right ;
+    width: 20em;
+    margin: 0.5em;
+}
+
+img.loanproject{
+    float: left ;
+    width: 20em;
+    margin: 0.5em;
+}
 
 ul.skill{
     justify-self: left;
@@ -330,7 +374,9 @@ form {
     text-align: left;
 }
 
-
+div.logocontainer{
+    display: flex
+}
 
 img.linkedin{
 margin: 10px;
@@ -355,6 +401,10 @@ img.github{
     margin: 10px;
 }
 
+a#github{
+    font-size: 55px
+}
+
 .skillsection  {
     margin: 10em;
 }
@@ -364,6 +414,31 @@ img.skillimage{
     width: 20em;
     border-radius: 20em;
     margin: 2em;
+}
+h3#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: unset;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: 1em;
+}
+
+h3#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    color: #0b3f1b;
+    background-color: unset;
+    height: 1em;
+    padding: 0.5em;
+    width: 15em;
+    margin: 1em; 
 }
 ul {
     margin: 2em;
@@ -392,7 +467,6 @@ footer {
     margin-top: 100px;
     display: block; 
     text-align: center;
-  
  }
 
 p{
@@ -401,7 +475,9 @@ p{
 
 header {
    background-color: white;
-   padding: 0em;
+   padding: 0.5em;
+   position: fixed;
+   width: 100%;
    
 }
 .scrollbackup{
@@ -416,10 +492,13 @@ img.topimage{
 
 
 @media (max-width: 768px ) {
+
+    button.menu-toggle{
+        display: block;
+    }
     nav{
         flex-direction: column;
-        align-items: center;
-        display: none;
+        align-items: left;
         width: 100%;
     }
 
@@ -431,9 +510,9 @@ img.topimage{
 
     div{
         text-align: justify;
-        margin: 0em;
-        padding: 0em
-    }
+        margin: 50px;
+        padding: 0px;
+        }
 
     body{
         height: 100%
@@ -455,6 +534,7 @@ p.home{
     justify-content: left;
 }
 
+
 h3#aboutme{
 justify-content: left;
 align-content: left;
@@ -475,16 +555,13 @@ p.aboutme{
     text-align: justify;
 }
 
+
+
 .projectsection{
     margin: 0em;
     justify-content: center;
 }
-h3#projects{
- justify-content: left;
-align-content: left;
-display: flex;
-width: auto;  
-}
+
 
 img.skillimage{
     width: em
@@ -518,6 +595,13 @@ width: 5em;
 margin: auto;
     
 }
+
+h3#projects{
+    justify-content: left;
+    align-content: left;
+    display: flex;
+    width: 1em;  
+   }
     
 }
 
