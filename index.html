@@ -93,7 +93,9 @@
             <h3 id ="skills"></h3> 
         </div>
         <h3>Skills</h3>
+        <div class="container3">
         <img src="skills.jpg" class="skillimage">
+
                 
         <ul class="skill">
             <li>Creative</li>
@@ -107,7 +109,7 @@
 
         </ul>
 
-        
+        </div>
     </div>
 
 <div class = "contactsection">
@@ -116,7 +118,7 @@
     </div>
     <h3>Contact</h3>
     <img src="Contactme.jpg" class="contactimage">
-        <form>
+        <form onsubmit="submitForm(event)">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name">
         <label for="email">Email:</label>
@@ -141,7 +143,16 @@
         <p class="footer">&copy; 2025 Tolulope</p>
     </footer>  
     </div>
-
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "v-zW3On2Bik1uYOg4",
+  });
+})();
+</script>
   </body>
 
   
