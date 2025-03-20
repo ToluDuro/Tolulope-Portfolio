@@ -395,6 +395,27 @@ a.resume{
    
 }
 
+img.skillLogo{
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.container3{
+    display: flex;
+    margin:2.5em;
+    justify-content: space-around;
+}
+.container4{
+    display: flex;
+    margin:2.5em;
+    justify-content: space-around;
+}
+.container5{
+    display: flex;
+    margin:2.5em;
+    justify-content: space-around;
+}
+
 img.github{
     width: 2em;
     margin: 10px;
